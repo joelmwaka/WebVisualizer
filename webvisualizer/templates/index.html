@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Web Visualizer</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #image-box {
+      max-width: 90%; /* Adjust the width as needed */
+      height: auto; /* Adjust the height as needed */
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    #buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px; /* Adjust the gap between buttons */
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Web Visualizer</h1>
+  <div id="image-box">
+    <img src="{{ url_for('video_feed') }}" style="width: 100%; height: auto;">
+  </div>
+  <div id="buttons">
+    <button onclick="button1Click()">Previous</button>
+    <button onclick="button2Click()">Play/Pause</button>
+    <button onclick="button3Click()">Next</button>
+  </div>
+
+  <script>
+    // Define functions for button click events if needed
+    function button1Click() {
+      // Add code for Button 1 click event
+    }
+
+    function button2Click() {
+      // Add code for Button 2 click event
+    }
+
+    function button3Click() {
+      // Add code for Button 3 click event
+    }
+  </script>
+</body>
+</html>
